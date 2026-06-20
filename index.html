@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kazutaka Yamamoto — Projects</title>
+<meta name="description" content="山本和隆が代表を務める3法人(Uninya Inc./アテナ/MUGI)で並行運営する9プロジェクトの一覧。Pieter Levels方式の日本再現プロジェクト。">
+<meta name="author" content="Kazutaka Yamamoto">
+
+<!-- OGP -->
+<meta property="og:title" content="Kazutaka Yamamoto — Projects">
+<meta property="og:description" content="9 projects in parallel. Inspired by @levelsio. Uninya Inc. / Athena / MUGI.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://projects.athena.asia/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Kazutaka Yamamoto Projects">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@caz_kyamamoto">
+<meta name="twitter:title" content="Kazutaka Yamamoto — Projects">
+<meta name="twitter:description" content="9 projects in parallel. Inspired by @levelsio.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'media',
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['ui-sans-serif', 'system-ui', '-apple-system', '"Hiragino Kaku Gothic ProN"', '"Yu Gothic"', 'Meiryo', 'sans-serif'],
+          mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace'],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-feature-settings: "palt"; }
+  .project-card { transition: all 0.2s ease; }
+  .project-card:hover { transform: translateY(-2px); }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 11px; font-weight: 600; }
+  .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #22c55e; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+</style>
+</head>
+
+<body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased">
+
+<div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+
+  <!-- Header -->
+  <header class="mb-12">
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-2">
+      Kazutaka Yamamoto
+      <span class="text-zinc-500 dark:text-zinc-400 font-normal">— Projects</span>
+    </h1>
+    <p class="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed">
+      私が責任者として動かしている <span class="font-semibold text-zinc-900 dark:text-zinc-100">9プロジェクト</span> の一覧。<br>
+      <a href="https://x.com/levelsio" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">Pieter Levels(@levelsio)</a> に感化されて12ヶ月のプロセスをXで公開中。
+    </p>
+    <p class="mt-3">
+      <a href="https://x.com/caz_kyamamoto" class="text-sm text-zinc-700 dark:text-zinc-300 hover:underline" target="_blank" rel="noopener">𝕏 @caz_kyamamoto</a>
+      <span class="text-zinc-400 mx-2">·</span>
+      <a href="https://note.com/uninya" class="text-sm text-zinc-700 dark:text-zinc-300 hover:underline" target="_blank" rel="noopener">note @uninya</a>
+    </p>
+  </header>
+
+  <!-- Companies -->
+  <section class="mb-12">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">Companies</h2>
+    <div class="space-y-3">
+      <div class="flex items-baseline gap-3">
+        <a href="https://www.uninya-inc.com/" target="_blank" rel="noopener" class="font-semibold hover:underline">Uninya Inc.</a>
+        <span class="text-sm text-zinc-600 dark:text-zinc-400">Web/System development · 20+ years</span>
+      </div>
+      <div class="flex items-baseline gap-3">
+        <span class="font-semibold">株式会社アテナ (Athena)</span>
+        <span class="text-sm text-zinc-600 dark:text-zinc-400">New AI products studio</span>
+      </div>
+      <div class="flex items-baseline gap-3">
+        <span class="font-semibold">株式会社MUGI</span>
+        <span class="text-sm text-zinc-600 dark:text-zinc-400">Artist royalty distribution · JPYC</span>
+      </div>
+    </div>
+    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-400">All as CEO. Cited from <a href="https://lexfridman.com/pieter-levels-transcript/" class="hover:underline" target="_blank" rel="noopener">@levelsio</a>: "I do hire contractors for specific things."</p>
+  </section>
+
+  <!-- Projects -->
+  <section class="mb-12">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">Projects (9)</h2>
+
+    <!-- Existing 5 -->
+    <h3 class="text-sm font-semibold text-zinc-700 dark:text-zinc-300 mb-3 mt-6">既存 — Existing (5)</h3>
+    <div class="space-y-4">
+
+      <div class="project-card border border-zinc-200 dark:border-zinc-800 rounded-lg p-4">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h4 class="font-semibold">Postari</h4>
+          <span class="badge bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300"><span class="live-dot mr-1.5 align-middle"></span>Live</span>
+        </div>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">Project of Athena.</p>
+      </div>
+
+      <div class="project-card border border-zinc-200 dark:border-zinc-800 rounded-lg p-4">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h4 class="font-semibold">CueFlow</h4>
+          <span class="badge bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300">Building</span>
+        </div>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">MIDI → 楽譜PDF自動変換 SaaS。Hermes Agent + Claude API構成。</p>
+      </div>
+
+      <div class="project-card border border-zinc-200 dark:border-zinc-800 rounded-lg p-4">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h4 class="font-semibold">著作権管理システム</h4>
+          <span class="badge bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300"><span class="live-dot mr-1.5 align-middle"></span>Live</span>
+        </div>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">インディーアーティスト向け著作権・印税管理。</p>
+      </div>
+
+      <div class="project-card border border-zinc-200 dark:border-zinc-800 rounded-lg p-4">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h4 class="font-semibold">Concafe OS</h4>
+          <span class="badge bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300">Building</span>
+        </div>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">コンセプトカフェ運営 SaaS。キャスト売上集計・推し客CRM・シフト・給与計算。別法人開発中。</p>
+      </div>
+
+      <div class="project-card border border-zinc-200 dark:border-zinc-800 rounded-lg p-4">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h4 class="font-semibold">報酬分配システム</h4>
+          <span class="badge bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300"><span class="live-dot mr-1.5 align-middle"></span>Live</span>
+        </div>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">JPYC連携、手数料3%でアーティストへ97%還元。タマゴ指数(社会貢献価値の対数可視化)を理論基盤。株式会社MUGI事業。</p>
+      </div>
+
+    </div>
+
+    <!-- New 4 -->
+    <h3 class="text-sm font-semibold text-zinc-700 dark:text-zinc-300 mb-3 mt-8">新規 — New (4, 2026)</h3>
+    <div class="space-y-4">
+
+      <div class="project-card border border-zinc-200 dark:border-zinc-800 rounded-lg p-4">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h4 class="font-semibold">AI Profile Studio Japan</h4>
+          <span class="badge bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">Soon</span>
+        </div>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">就活・転職プロフィール写真AI。日本人顔fine-tune + 業界別ドレスコード。<a href="https://photoai.com" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">@levelsio's PhotoAI</a>の業界特化版。</p>
+      </div>
+
+      <div class="project-card border border-zinc-200 dark:border-zinc-800 rounded-lg p-4">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h4 class="font-semibold">
+            <a href="https://ai-series.athena.asia/#strength" target="_blank" rel="noopener" class="hover:underline">AIシリーズ ↗</a>
+          </h4>
+          <span class="badge bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300"><span class="live-dot mr-1.5 align-middle"></span>Live</span>
+        </div>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">AI x ハードウェアのシリーズ。私が実際に使っているセットアップそのもの。</p>
+      </div>
+
+      <div class="project-card border border-zinc-200 dark:border-zinc-800 rounded-lg p-4">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h4 class="font-semibold">Indie Job JP</h4>
+          <span class="badge bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">Soon</span>
+        </div>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">AI/Indie Hacker特化求人板。<a href="https://remoteok.com" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">@levelsio's RemoteOK</a>の日本市場版。</p>
+      </div>
+
+      <div class="project-card border border-zinc-200 dark:border-zinc-800 rounded-lg p-4">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h4 class="font-semibold">Pieter Playbook JP</h4>
+          <span class="badge bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">Soon</span>
+        </div>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">12ヶ月のプロセス全実録。<a href="https://readmake.com" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">@levelsio's MAKE Book</a> 同型の戦略書販売。2027年5月公開予定。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Inspired by -->
+  <section class="mb-12">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">Inspired by</h2>
+    <div class="space-y-2">
+      <p class="text-sm">
+        <a href="https://x.com/levelsio" target="_blank" rel="noopener" class="font-semibold hover:underline">Pieter Levels (@levelsio)</a>
+        <span class="text-zinc-600 dark:text-zinc-400">— Serial entrepreneur, </span>
+        <a href="https://levels.io/projects/" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">levels.io/projects/</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="mb-12 p-5 rounded-lg bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-3">Process</h2>
+    <p class="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+      進捗・失敗・数字、すべて <a href="https://x.com/caz_kyamamoto" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">𝕏</a> で公開しています。<br>
+      12ヶ月後(2027年5月予定)、振り返り note で全告白する予定です。
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-8 border-t border-zinc-200 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-500">
+    <p>© 2026 Kazutaka Yamamoto. Built minimal, inspired by <a href="https://levels.io/projects/" class="hover:underline" target="_blank" rel="noopener">levels.io/projects/</a>.</p>
+    <p class="mt-1">Source: <a href="https://github.com/AthenaAsia/projects" class="hover:underline" target="_blank" rel="noopener">github.com/AthenaAsia/projects</a></p>
+  </footer>
+
+</div>
+
+</body>
+</html>
