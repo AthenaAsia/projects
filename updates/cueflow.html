@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Language auto-detect: send non-Japanese browsers to the English site -->
+<script>
+(function(){try{var s=localStorage.getItem('lang');if(s==='ja')return;var p=location.pathname;if(p===''||p==='/')p='/index.html';if(s==='en'){location.replace('/en'+p);return;}var L=navigator.languages||[navigator.language||''];if(!L.some(function(l){return /^ja/i.test(l);}))location.replace('/en'+p);}catch(e){}})();
+</script>
 <title>CueFlow — 更新状況 | Kazutaka Yamamoto Projects</title>
 <meta name="description" content="CueFlow（MIDI→楽譜PDF自動変換サービス）の最新の更新状況と履歴。">
 <meta name="author" content="Kazutaka Yamamoto">
@@ -40,6 +44,13 @@
 <body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased">
 
 <div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+
+  <!-- Lang switch -->
+  <div class="flex justify-end mb-4 text-xs text-zinc-500 dark:text-zinc-400">
+    <span class="font-semibold text-zinc-900 dark:text-zinc-100">日本語</span>
+    <span class="mx-1.5">/</span>
+    <a href="/en/updates/cueflow.html" onclick="try{localStorage.setItem('lang','en')}catch(e){}" class="hover:underline">English</a>
+  </div>
 
   <!-- Back -->
   <p class="mb-8">
