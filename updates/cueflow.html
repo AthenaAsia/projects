@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CueFlow — 更新状況 | Kazutaka Yamamoto Projects</title>
+<meta name="description" content="CueFlow（MIDI→楽譜PDF自動変換サービス）の最新の更新状況と履歴。">
+<meta name="author" content="Kazutaka Yamamoto">
+
+<!-- OGP -->
+<meta property="og:title" content="CueFlow — 更新状況">
+<meta property="og:description" content="MIDIから楽譜PDFを自動で作るサービス CueFlow の更新状況。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://projects.athena.asia/updates/cueflow.html">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@caz_kyamamoto">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'media',
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['ui-sans-serif', 'system-ui', '-apple-system', '"Hiragino Kaku Gothic ProN"', '"Yu Gothic"', 'Meiryo', 'sans-serif'],
+          mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace'],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-feature-settings: "palt"; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 11px; font-weight: 600; }
+</style>
+</head>
+
+<body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased">
+
+<div class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+
+  <!-- Back -->
+  <p class="mb-8">
+    <a href="../index.html" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">← プロジェクト一覧へ戻る</a>
+  </p>
+
+  <!-- Header -->
+  <header class="mb-10">
+    <div class="flex items-center gap-3 mb-2">
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight">CueFlow — 更新状況</h1>
+      <span class="badge bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300">Building</span>
+    </div>
+    <p class="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed">
+      演奏データ(MIDI)から、読みやすい楽譜PDFを自動で作るサービス。
+    </p>
+    <p class="mt-3">
+      <a href="https://app.cueflow.jp/" target="_blank" rel="noopener" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">🔗 app.cueflow.jp ↗</a>
+    </p>
+  </header>
+
+  <!-- Latest -->
+  <section class="mb-10">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">最新の更新</h2>
+    <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 p-5 bg-zinc-50 dark:bg-zinc-900/50">
+      <p class="text-sm font-mono text-zinc-500 dark:text-zinc-400 mb-2">2026-06-21</p>
+      <ul class="space-y-2 text-sm text-zinc-700 dark:text-zinc-300 list-disc pl-5">
+        <li>拍子の情報が乱れた演奏データへの対応を大きく強化しました。おかしな箇所を自動で見つけ、直し方の候補を提示し、選んだ設定を次回から覚えるようにしました。</li>
+        <li>ピアノの楽譜が読みやすくなりました（不要な空白の解消、左手・右手の譜表をまとめて表示、細切れになった拍子の統合）。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- History -->
+  <section class="mb-12">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">これまでの履歴</h2>
+    <div class="space-y-6">
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-06-21</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">壊れた演奏データへの対応・譜面の見やすさ改善</p>
+          <p>乱れた演奏データを自動で検出して直せるように。ピアノ譜の表示も大幅に改善しました。</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-06前半</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">複数パート曲のレイアウトを大幅改善</p>
+          <p>弦楽四重奏のような複数パートの曲で、小節の崩れや紙面からのはみ出しを解消。メイン楽曲のPDF品質が安定しました。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-8 border-t border-zinc-200 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-500">
+    <p><a href="../index.html" class="hover:underline">← プロジェクト一覧</a> · 進捗は <a href="https://x.com/caz_kyamamoto" target="_blank" rel="noopener" class="hover:underline">𝕏 @caz_kyamamoto</a> でも公開中</p>
+    <p class="mt-1">© 2026 Kazutaka Yamamoto.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
