@@ -75,10 +75,11 @@
   <section class="mb-10">
     <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">Latest update</h2>
     <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 p-5 bg-zinc-50 dark:bg-zinc-900/50">
-      <p class="text-sm font-mono text-zinc-500 dark:text-zinc-400 mb-2">2026-06-21</p>
+      <p class="text-sm font-mono text-zinc-500 dark:text-zinc-400 mb-2">2026-06-24</p>
       <ul class="space-y-2 text-sm text-zinc-700 dark:text-zinc-300 list-disc pl-5">
-        <li>Greatly strengthened handling of performance data with corrupted time-signature information. It now automatically finds the odd spots, suggests fixes, and remembers the settings you chose for next time.</li>
-        <li>Piano scores are now easier to read (removed unnecessary whitespace, combined the left- and right-hand staves into a single system, and merged fragmented time signatures).</li>
+        <li>Fixed, at the root, a bug where pieces could be cut off partway through. Even with an anacrusis (pickup) or when some instruments rest first, the score now runs all the way to the final note.</li>
+        <li>Started building a system that records each conversion decision so it can be reviewed and improved later (an admin review dashboard) — the foundation for steadily raising quality.</li>
+        <li>Expanded expert review to two reviewers.</li>
       </ul>
     </div>
   </section>
@@ -87,6 +88,14 @@
   <section class="mb-12">
     <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">History</h2>
     <div class="space-y-6">
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-06-24</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">Root-fix for early cut-offs · quality-review foundation</p>
+          <p>Resolved the bug that cut pieces off partway through. Also began building the system to log, review and keep improving conversion decisions.</p>
+        </div>
+      </div>
 
       <div class="flex gap-4">
         <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-06-21</span>
