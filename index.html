@@ -8,12 +8,12 @@
 (function(){try{var s=localStorage.getItem('lang');if(s==='ja')return;var p=location.pathname;if(p===''||p==='/')p='/index.html';if(s==='en'){location.replace('/en'+p);return;}var L=navigator.languages||[navigator.language||''];if(!L.some(function(l){return /^ja/i.test(l);}))location.replace('/en'+p);}catch(e){}})();
 </script>
 <title>Kazutaka Yamamoto — Projects</title>
-<meta name="description" content="山本和隆が代表を務める3法人(Uninya Inc./アテナ/MUGI)で並行運営する13プロジェクトの一覧。Pieter Levels方式の日本再現プロジェクト。">
+<meta name="description" content="山本和隆が代表を務める3法人(Uninya Inc./アテナ/MUGI)で並行運営する14プロジェクトの一覧。Pieter Levels方式の日本再現プロジェクト。">
 <meta name="author" content="Kazutaka Yamamoto">
 
 <!-- OGP -->
 <meta property="og:title" content="Kazutaka Yamamoto — Projects">
-<meta property="og:description" content="13 projects in parallel. Inspired by @levelsio. Uninya Inc. / Athena / MUGI.">
+<meta property="og:description" content="14 projects in parallel. Inspired by @levelsio. Uninya Inc. / Athena / MUGI.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://projects.athena.asia/">
 <meta property="og:locale" content="ja_JP">
@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@caz_kyamamoto">
 <meta name="twitter:title" content="Kazutaka Yamamoto — Projects">
-<meta name="twitter:description" content="13 projects in parallel. Inspired by @levelsio.">
+<meta name="twitter:description" content="14 projects in parallel. Inspired by @levelsio.">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -68,7 +68,7 @@
       <span class="text-zinc-500 dark:text-zinc-400 font-normal">— Projects</span>
     </h1>
     <p class="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed">
-      私が責任者として動かしている <span class="font-semibold text-zinc-900 dark:text-zinc-100">13プロジェクト</span> の一覧。<br>
+      私が責任者として動かしている <span class="font-semibold text-zinc-900 dark:text-zinc-100">14プロジェクト</span> の一覧。<br>
       <a href="https://x.com/levelsio" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">Pieter Levels(@levelsio)</a> に感化されて12ヶ月のプロセスをXで公開中。
     </p>
     <p class="mt-3">
@@ -100,7 +100,7 @@
 
   <!-- Projects -->
   <section class="mb-12">
-    <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">Projects (13)</h2>
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">Projects (14)</h2>
 
     <!-- プロジェクト一覧：新規追加はこの <div class="space-y-4"> の中に、下のカードと同じ形式で1ブロック足すだけ。
          バッジは Live / Building / Soon の3種（クラスは既存カードからコピー）。追加したら上の (n) の件数も更新。 -->
@@ -232,6 +232,15 @@
         <p class="text-sm mt-2"><a href="https://www.gekiban.jp/" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">🔗 gekiban.jp ↗</a></p>
       </div>
 
+      <div class="project-card border border-zinc-200 dark:border-zinc-800 rounded-lg p-4">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h4 class="font-semibold">ビジョン広告</h4>
+          <span class="badge bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300">Building</span>
+        </div>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">街頭の大型ビジョンに、個人がネットから自分で広告を出せるようにするサービス。動画をアップして時間帯を選ぶだけ。放映回数は保証し、足りなければ返金します。</p>
+        <p class="text-sm mt-2"><span class="text-zinc-400 dark:text-zinc-500">🔗 近日公開</span></p>
+      </div>
+
     </div>
   </section>
 
@@ -259,6 +268,21 @@
   <section class="mb-12">
     <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">最近の更新 — Recent updates</h2>
     <div class="space-y-3">
+
+      <div class="flex gap-3 text-sm">
+        <span class="text-zinc-400 dark:text-zinc-500 font-mono whitespace-nowrap">2026-07</span>
+        <p class="text-zinc-700 dark:text-zinc-300"><span class="font-semibold">Lakho</span> — 撮影した映像を人の目で確認して計測結果を補正できる「判定ダッシュボード」の設計を固め、開発に着手しました。判定は履歴付きで記録して補正の根拠を一元管理し、将来はAIが自動で補正するための学習データとしても活用します。あわせて、計測できなかった時間帯を「0人」と取り違えないよう、観測の抜けや品質を明示する仕組みも整えています。</p>
+      </div>
+
+      <div class="flex gap-3 text-sm">
+        <span class="text-zinc-400 dark:text-zinc-500 font-mono whitespace-nowrap">2026-07</span>
+        <p class="text-zinc-700 dark:text-zinc-300"><span class="font-semibold">こんなび</span> — 掲載エリアの拡大を進めています。これまで東京中心だった収録範囲を、首都圏の他県へ順に広げ始めました。<a href="https://www.concafe.help/" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline whitespace-nowrap">詳しく →</a></p>
+      </div>
+
+      <div class="flex gap-3 text-sm">
+        <span class="text-zinc-400 dark:text-zinc-500 font-mono whitespace-nowrap">2026-07</span>
+        <p class="text-zinc-700 dark:text-zinc-300"><span class="font-semibold">Lakho</span> — 2台目の計測機を組み立て、別の街への設置準備が整いました。あわせて、複数の地点から送られてくる計測データを1か所に集めて集計・可視化するサーバーとダッシュボードを構築。誰が作業しても同じ手順で立ち上げられるよう、組立・カメラ設定・現地設置までの手順書も整備しました。</p>
+      </div>
 
       <div class="flex gap-3 text-sm">
         <span class="text-zinc-400 dark:text-zinc-500 font-mono whitespace-nowrap">2026-07</span>
