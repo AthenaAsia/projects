@@ -75,11 +75,11 @@
   <section class="mb-10">
     <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">Latest update</h2>
     <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 p-5 bg-zinc-50 dark:bg-zinc-900/50">
-      <p class="text-sm font-mono text-zinc-500 dark:text-zinc-400 mb-2">2026-06-24</p>
+      <p class="text-sm font-mono text-zinc-500 dark:text-zinc-400 mb-2">2026-09-28</p>
       <ul class="space-y-2 text-sm text-zinc-700 dark:text-zinc-300 list-disc pl-5">
-        <li>Fixed, at the root, a bug where pieces could be cut off partway through. Even with an anacrusis (pickup) or when some instruments rest first, the score now runs all the way to the final note.</li>
-        <li>Started building a system that records each conversion decision so it can be reviewed and improved later (an admin review dashboard) — the foundation for steadily raising quality.</li>
-        <li>Expanded expert review to two reviewers.</li>
+        <li>Accidentals are now chosen to fit the key of the piece — the item we had queued last time — and this is merged into the product.</li>
+        <li>Fixed how tuplets that start with a rest are grouped, and filler rests that appear when voices are cleaned up are no longer shown.</li>
+        <li>On the second piece, 54 of the 57 checks derived from the reviewer&rsquo;s comments now pass (the remaining 3 are complex tuplets), with all of the roughly 2,200 automated tests still green.</li>
       </ul>
     </div>
   </section>
@@ -88,6 +88,62 @@
   <section class="mb-12">
     <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">History</h2>
     <div class="space-y-6">
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-09-28</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">Key-aware accidentals · tuplet and rest fixes</p>
+          <p>Sharps and flats are now chosen to match the key, merged together with fixes for tuplets that start with a rest and unnecessary filler rests. The second piece now passes 54 of 57 checks.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-09-27</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">Third piece reviewed · ~60% of comments shipped · logo set</p>
+          <p>A solo piano piece went through the same review loop, and of the 100-plus comments received across two pieces we fixed and shipped roughly 60 percent (stem direction, clef changes in the left-hand staff, pedal marking placement and more). We agreed to leave out of review what MIDI alone cannot decide, such as repeat instructions and which hand plays a passage. A full logo and icon set is now in place.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-09-26</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">Review of a differently scored piece · theory rules for every piece</p>
+          <p>For a second piece with different instrumentation the reviewer commented on every page; we corrected note grouping, rest writing and stem direction by time signature. Basic theory rules now apply to every piece, and the review screen handles long stretches of rest cleanly.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-09-23–25</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">Notation standards loop completed · fixed review form</p>
+          <p>Ask the professional &rarr; ship the answers &rarr; re-verify in the same screen completed a full loop. Rest writing and tempo marking are now product-wide standards, and reviews use a fixed form: spots that must be fixed, correction time to a deliverable, and usable / usable after fixes / not usable.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-09-20</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">Revised scores submitted · measurement baseline</p>
+          <p>Submitted corrected scores to the reviewer, organized the open notation questions, and set up a baseline for measuring match rate against reference data.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-08</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">Continued expert review</p>
+          <p>Fixed how note lengths are handled in keyboard parts and prepared change reports and side-by-side score comparisons for two reviewers.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-07</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">Quality criteria and automated checks</p>
+          <p>Finalized the quality definition of done through external review, added machine checks for notation, and set up automated tests plus nightly regression runs. Planned the next phase &mdash; general music theory and notation rules &mdash; and began redesigning how measures are split.</p>
+        </div>
+      </div>
 
       <div class="flex gap-4">
         <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-06-24</span>

@@ -75,11 +75,11 @@
   <section class="mb-10">
     <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">最新の更新</h2>
     <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 p-5 bg-zinc-50 dark:bg-zinc-900/50">
-      <p class="text-sm font-mono text-zinc-500 dark:text-zinc-400 mb-2">2026-06-24</p>
+      <p class="text-sm font-mono text-zinc-500 dark:text-zinc-400 mb-2">2026-09-28</p>
       <ul class="space-y-2 text-sm text-zinc-700 dark:text-zinc-300 list-disc pl-5">
-        <li>曲が途中で途切れてしまう不具合を根本から解消しました。弱起や、一部の楽器が先に休む曲でも、最後の音まできちんと楽譜になります。</li>
-        <li>変換時の判断を1件ずつ記録し、後から検証・改善できる仕組み（管理用のレビュー画面）の構築を始めました。品質を継続的に高めていくための土台です。</li>
-        <li>専門家によるチェック体制を2名に拡大しました。</li>
+        <li>前回「次の課題」としていた、曲の調に合わせたシャープ・フラットの書き分けに対応し、製品本体に統合しました。</li>
+        <li>休符から始まる連符のまとめ方を修正し、声部を整理した際に出る不要な埋め休符を表示しないようにしました。</li>
+        <li>編成の異なる2曲目では、専門家の指摘をもとにした確認項目57件中54件をクリア（残りは複雑な連符の3件）。約2,200件の自動テストがすべて通る状態を保っています。</li>
       </ul>
     </div>
   </section>
@@ -88,6 +88,62 @@
   <section class="mb-12">
     <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">これまでの履歴</h2>
     <div class="space-y-6">
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-09-28</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">調に合わせた臨時記号の書き分け・連符と休符の改善</p>
+          <p>シャープ・フラットの選び方を曲の調に合わせるよう改善し、休符から始まる連符や不要な埋め休符の扱いとあわせて製品に統合。2曲目の確認項目は57件中54件をクリアしました。</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-09-27</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">3曲目のレビュー一巡・指摘の約6割を反映・ロゴ整備</p>
+          <p>ピアノ独奏曲のレビューも一巡し、2曲分で受け取った100件を超える指摘のうち約6割を修正して本番へ反映（符尾の向き、左手の段での音部記号の切り替え、ペダル記号の位置など）。MIDIだけでは判断できない事項（繰り返しの指示、どちらの手で弾くか）はレビュー対象から外すことを取り決めました。サービスのロゴ・アイコン一式も整備。</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-09-26</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">別編成の曲のレビュー反映・楽典ルールを全曲へ</p>
+          <p>編成の異なる2曲目について全ページ分の指摘を受け取り、拍子に応じた音のまとめ方・休符の書き方・符尾の向きを修正。楽典の基本ルールを特定の曲だけでなく全曲にかかるよう広げ、長い休みが続く曲のレビュー画面も見やすくしました。</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-09-23〜25</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">記譜ルールの標準化が一巡・評価の定型化</p>
+          <p>専門家への確認 → 回答を本番へ反映 → 同じ画面で再検証、の流れが一巡。休符の書き方やテンポ表記を製品の標準として確定し、評価も「直さないと使えない箇所の件数」「納品までの修正時間」「使える／直せば使える／使えない」の定型フォームにしました。</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-09-20</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">修正版楽譜の提出・評価基準づくり</p>
+          <p>修正後の楽譜を専門家へ提出し、記譜ルールの確認事項を整理。正解データと照合して一致率を測る基準を整えました。</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-08</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">専門家レビューの継続</p>
+          <p>鍵盤パートの音の長さの扱いを修正し、専門家2名向けに修正内容と譜面比較の資料を用意してレビューを継続しました。</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-07</span>
+        <div class="text-sm text-zinc-700 dark:text-zinc-300">
+          <p class="font-semibold mb-1">品質基準と自動チェックの整備</p>
+          <p>品質の完了基準を外部レビューで確定し、譜面を機械的にチェックする仕組みと、自動テスト・夜間の回帰テストを整備。次の段階として「一般的な楽典・記譜法」への対応計画を固め、小節の割り方の再設計にも着手しました。</p>
+        </div>
+      </div>
 
       <div class="flex gap-4">
         <span class="text-sm font-mono text-zinc-400 dark:text-zinc-500 whitespace-nowrap pt-0.5">2026-06-24</span>
